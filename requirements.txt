@@ -1,0 +1,7 @@
+safetensors==0.6.2
+torch==2.6.0
+torchvision==0.21.0
+transformers==4.57.1
+einops==0.8.1
+protobuf==6.33.2
+accelerate==1.12.0
