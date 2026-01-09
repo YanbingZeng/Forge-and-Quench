@@ -26,6 +26,12 @@ pip install sentencepiece --prefer-binary -i https://pypi.org/simple
 ```
 
 ### Inference
+Before inference, please download the relevant models and place them in the appropriate directory.
+1. download the `Qwen2.5-VL-7B-Instruct` model from [HuggingFace: Qwen2.5-VL-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct).
+2. download the `FLUX.1-dev` model from [HuggingFace: FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev).
+3. download the `LongCat-Image` model from [HuggingFace: LongCat-Image](https://huggingface.co/meituan-longcat/LongCat-Image).
+4. download the `Forge-and-Quench` model from [HuggingFace: Forge-and-Quench](https://huggingface.co/zengyb6666/Forge-and-Quench).
+
 FaQ inference with FLUX.1-dev model
 ```bash
 python3 infer.py --qwen25_vl_path /path/to/Qwen2.5-VL-7B-Instruct --forge_and_quench_model_path /path/to/Forge-and-Quench --t2i_model flux1-dev --t2i_model_path /path/to/FLUX.1-dev
